@@ -1,0 +1,91 @@
+Dependencies
+
+Facultades
+
+    Artes
+    Ciencias Agrarias
+    Ciencias Económicas
+    Ciencias Exactas y Naturales
+    Ciencias Farmacéuticas y Alimentarias
+    Ciencias Sociales y Humanas
+    Comunicaciones y Filología
+    Derecho y Ciencias Políticas
+    Educación
+    Enfermería
+    Ingeniería
+    Medicina
+    Odontología
+    Salud Pública
+
+Escuelas
+
+    Idiomas
+    Interamericana de Bibliotecología
+    Microbiología
+    Nutrición y Dietética
+
+Institutos
+
+    Filosofía
+    Instituto Universitario de Educación Física y Deporte
+    Estudios Políticos
+    Estudios Regionales
+
+Corporaciones
+
+    Ambiental
+    Ciencias Básicas Biomédicas
+    Patologías Tropicales
+
+meta_data
+
+   Entidad	
+   
+   Oferta de servicios	
+    
+   Lineas	
+   
+   Servicios 	
+   
+   Descripción del servicio 	
+   
+  Contacto	
+   
+  Correo	
+   
+  Telefono	
+
+  regiones
+
+
+
+basic_url
+
+https://asone.udea.edu.co/portafolio/#/catalog?events=true&lines=7,9&filters=activities,ages,modalities,sectionals&dependencies=N
+
+where N = 1 ... 30
+
+route for titles in basic catalog
+
+$x("//mat-grid-tile//div[@class='title']")
+
+routes for buttons in catalog
+$x("//mat-grid-tile//button")
+
+routes for dependencies
+$x("//div[@class="srongGreen"]/text()")
+
+routes for title catalog Item
+$x("//div/h2/text()")[0]
+
+route for def service
+$x("//div/span/text()")
+
+route for services
+$x("//div[@class='parent-container']") 
+route for regiones
+$x("//mat-list")[0]
+route for Contacto
+$x("//mat-list")[1]
+
+
